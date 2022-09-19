@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">WebD Basics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Domain
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Front-end</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Back-end</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+
+                            </li>
+                            <li><a class="dropdown-item" href="#">Other Domians</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-primary" role="alert">
+        <h4 class="alert-heading">Hello folks, I am Aditya Pandey</h4>
+        <p>I am a frontend web developer in progress, I have some knowledge of HTML, CSS and Javascript. Here I will
+            give you a complete roadmap in order to become a front end developer</p>
+        <!-- <hr> -->
+        <!-- <p class="mb-0">To begin with the front end development part, you need to master the basics of web development. In order to</p> -->
+    </div>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">More About Me</button>
+
+    <div class="offcanvas offcanvas-end text-bg-dark " tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Aditya Pandey</h5>
+            <button type="button" class="btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div align="center" class="offcanvas-body">
+            <div>
+                <img height="300px" src="Assets/adi.jpg" alt="">
+                <br>
+                <br>
+                <p> I am Aditya Pandey and I am from Ghaziabad. I am currently pursuing B.Tech from KIET Group of
+                    Instituitions. I am a CS branch 2nd year student.</p>
+            </div>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Skill Stack
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank"
+                            rel="noreferrer"><img
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg"
+                                width="36" height="36" alt="C" /></a><span>C Language</span>
+
+                    </li>
+                    <li><a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank"
+                            rel="noreferrer"><img
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg"
+                                width="36" height="36" alt="C++" /></a><span>C++</span>
+
+                    </li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"
+                            rel="noreferrer"><img
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
+                                width="36" height="36" alt="HTML5" /></a><span>HTML5</span>
+
+                    </li>
+                    <li>
+                        <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
+                                width="36" height="36" alt="CSS3" /></a><SPan>CSS3</SPan>
+
+                    </li>
+                    <li>
+                        <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img
+                                src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="36"
+                                height="36"></a><span> GIT </span>
+
+                        </li>
+                </ul>
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Social Media
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="http://www.instagram.com/adityyaa_10" target="_blank" rel="noreferrer"><img
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg"
+                                width="32" height="32" /></a><span>Instagram</span>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/adityyaa10" target="_blank" rel="noreferrer"><img
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg"
+                                width="32" height="32" /></a><span>LinkedIn</span></li>
+                    <li><a href="https://www.stackoverflow.com/users/19778067" target="_blank" rel="noreferrer"><img
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/stackoverflow.svg"
+                                width="32" height="32" /></a><span>Stack Overflow</span>
+                    </li>
+                    <li><a href="https://www.twitter.com/adityyaa_10" target="_blank" rel="noreferrer"><img
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg"
+                                width="32" height="32" /></a><span>Twitter</span>
+                    </li>
+                    <li><a href="https://www.github.com/adityyaa-10" target="_blank" rel="noreferrer"><img
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg"
+                                width="32" height="32" /></a><span>Github</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
