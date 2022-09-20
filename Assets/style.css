@@ -1,0 +1,15 @@
+.offcanvas-body .dropdown .dropdown-menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 550;
+}
+.offcanvas-body .dropdown .dropdown-menu li:hover{
+    background-color: rgb(23, 23, 23);
+    color: #ffffff;
+}
+.offcanvas-body .dropdown .dropdown-menu li a:hover{
+    color: #ffffff;
+}
+.dropdown .btn{
+    background: rgb(23, 23, 23);
+}
