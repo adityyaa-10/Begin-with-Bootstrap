@@ -38,3 +38,22 @@
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
 }
+.padd-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.accordion{
+    margin: 0 0 0;
+}
+.accordion .accordion-item{
+    background: rgb(23, 23, 23);    
+}
+.accordion .accordion-item li{
+    color: #ffffff;
+}
+.accordion .accordion-item li:hover{
+    cursor: pointer;
+    background: cornsilk;
+    color: black;
+    display: inline;
+}
