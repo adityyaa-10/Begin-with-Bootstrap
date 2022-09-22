@@ -1,235 +1,406 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="Assets/style.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frameworks in CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">WebD Basics</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Tailblocks</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-white">First Link</a>
+                <a class="mr-5 hover:text-white">Second Link</a>
+                <a class="mr-5 hover:text-white">Third Link</a>
+                <a class="mr-5 hover:text-white">Fourth Link</a>
+            </nav>
+            <button
+                class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Domain
+        </div>
+    </header>
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Before they sold out
+                    <br class="hidden lg:inline-block">readymade gluten
+                </h1>
+                <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
+                    plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
+                    authentic tumeric truffaut hexagon try-hard chambray.</p>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Button</button>
+                    <button
+                        class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-400 body-font bg-gray-900">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Pitchfork Kickstarter Taxidermy
+                </h1>
+                <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80">Whatever cardigan tote bag tumblr hexagon
+                    brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-red-400 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-white font-medium title-font mb-2">Shooting Stars</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway
+                            tile poke farm.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-red-400 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-white font-medium title-font mb-2">The Catalyzer</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway
+                            tile poke farm.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-red-400 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-white font-medium title-font mb-2">Neptune</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway
+                            tile poke farm.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-red-400 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-white font-medium title-font mb-2">Melanchole</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway
+                            tile poke farm.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-red-400 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-white font-medium title-font mb-2">Bunker</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway
+                            tile poke farm.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-red-400 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-white font-medium title-font mb-2">Ramona Falls</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway
+                            tile poke farm.</p>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="flex mx-auto mt-16 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Button</button>
+        </div>
+    </section>
+    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="-my-8 divide-y-2 divide-gray-800">
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                        <span class="font-semibold title-font text-white">CATEGORY</span>
+                        <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                    </div>
+                    <div class="md:flex-grow">
+                        <h2 class="text-2xl font-medium text-white title-font mb-2">Bitters hashtag waistcoat fashion
+                            axe chia unicorn</h2>
+                        <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist
+                            pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke
+                            vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+                        <a class="text-red-400 inline-flex items-center mt-4">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Front-end</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Back-end</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-
-                            </li>
-                            <li><a class="dropdown-item" href="#">Other Domians</a>
-                            </li>
-                        </ul>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                    </div>
+                </div>
+                <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                        <span class="font-semibold title-font text-white">CATEGORY</span>
+                        <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                    </div>
+                    <div class="md:flex-grow">
+                        <h2 class="text-2xl font-medium text-white title-font mb-2">Meditation bushwick direct trade
+                            taxidermy shaman</h2>
+                        <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist
+                            pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke
+                            vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+                        <a class="text-red-400 inline-flex items-center mt-4">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                        <span class="font-semibold title-font text-white">CATEGORY</span>
+                        <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                    </div>
+                    <div class="md:flex-grow">
+                        <h2 class="text-2xl font-medium text-white title-font mb-2">Woke master cleanse drinking vinegar
+                            salvia</h2>
+                        <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist
+                            pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke
+                            vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+                        <a class="text-red-400 inline-flex items-center mt-4">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="alert alert-secondary" role="alert">
-        <h4 class="alert-heading">Hey folks, I am Aditya Pandey</h4>
-        <p>I am a frontend web developer in progress, I have some knowledge of HTML, CSS and Javascript. Here I will
-            give you a complete roadmap in order to become a front end developer</p>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight">More About Me</button>
-    </div>
-
-
-    <div class="offcanvas offcanvas-end text-bg-dark " tabindex="-1" id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <a href="https://github.com/adityyaa-10" class="offcanvas-title" id="offcanvasRightLabel">Aditya Pandey</a>
-            <button type="button" class="btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </section>
+    <section class="text-gray-400 bg-gray-900 body-font relative">
+        <div class="absolute inset-0 bg-gray-900">
+            <iframe title="map" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0"
+                scrolling="no"
+                src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                style="filter: grayscale(1) contrast(1.2) opacity(0.16);"></iframe>
         </div>
-        <div align="center" class="offcanvas-body">
-            <div>
-                <img height="300px" src="Assets/adi.jpg" alt="">
-                <br>
-                <br>
-                <p> I am Aditya Pandey and I am from Ghaziabad. I am currently pursuing B.Tech from KIET Group of
-                    Instituitions. I am a CS branch 2nd year student.</p>
+        <div class="container px-5 py-24 mx-auto flex">
+            <div
+                class="lg:w-1/3 md:w-1/2 bg-gray-900 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
+                <h2 class="text-white text-lg mb-1 font-medium title-font">Feedback</h2>
+                <p class="leading-relaxed mb-5">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+                <div class="relative mb-4">
+                    <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full bg-gray-800 rounded border border-gray-700 focus:border-red-500 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+                    <textarea id="message" name="message"
+                        class="w-full bg-gray-800 rounded border border-gray-700 focus:border-red-500 focus:ring-2 focus:ring-red-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+                <button
+                    class="text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Button</button>
+                <p class="text-xs text-gray-400 text-opacity-90 mt-3">Chicharrones blog helvetica normcore iceland
+                    tousled brook viral artisan.</p>
             </div>
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Skill Stack
+        </div>
+    </section>
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    class="inline-block w-8 h-8 text-gray-500 mb-8" viewBox="0 0 975.036 975.036">
+                    <path
+                        d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                    </path>
+                </svg>
+                <p class="leading-relaxed text-lg">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki
+                    taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag
+                    drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book
+                    skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before
+                    they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb
+                    next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking
+                    vinegar.</p>
+                <span class="inline-block h-1 w-10 rounded bg-red-500 mt-8 mb-6"></span>
+                <h2 class="text-white font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
+                <p class="text-gray-500">Senior Product Designer</p>
+            </div>
+        </div>
+    </section>
+    <footer class="text-gray-400 bg-gray-900 body-font">
+        <div
+            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-xl">Tailblocks</span>
                 </a>
-
-                <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank"
-                            rel="noreferrer"><img
-                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg"
-                                width="36" height="36" alt="C" /> C Language</a><span></span>
-
-                    </li>
-                    <li><a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank"
-                            rel="noreferrer"><img
-                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg"
-                                width="36" height="36" alt="C++" /> C++</a><span></span>
-
-                    </li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"
-                            rel="noreferrer"><img
-                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
-                                width="36" height="36" alt="HTML5" /> HTML5</a><span></span>
-
-                    </li>
-                    <li>
-                        <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img
-                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
-                                width="36" height="36" alt="CSS3" /> CSS3</a><SPan></SPan>
-
-                    </li>
-                    <li>
-                        <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img
-                                src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="36"
-                                height="36"> GIT</a><span> </span>
-
-                    </li>
-                </ul>
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Social Media
-                </a>
-
-                <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a href="http://www.instagram.com/adityyaa_10" target="_blank" rel="noreferrer"><img
-                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg"
-                                width="32" height="32" /> Instagram</a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/adityyaa10" target="_blank" rel="noreferrer"><img
-                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg"
-                                width="32" height="32" /> LinkedIn</a><span></span></li>
-                    <li><a href="https://www.stackoverflow.com/users/19778067" target="_blank" rel="noreferrer"><img
-                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/stackoverflow.svg"
-                                width="32" height="32" /> Stack Overflow</a><span></span>
-                    </li>
-                    <li><a href="https://www.twitter.com/adityyaa_10" target="_blank" rel="noreferrer"><img
-                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg"
-                                width="32" height="32" /> Twitter</a><span></span>
-                    </li>
-                    <li><a href="https://www.github.com/adityyaa-10" target="_blank" rel="noreferrer"><img
-                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg"
-                                width="32" height="32" /> Github</a><span></span>
-                    </li>
-                </ul>
+                <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
             </div>
-        </div>
-    </div>
-    <p class="padd-15">The 3 pillars of basic front end development are: HTML, CSS and Javascript. Now let us have a
-        look at each one of them</p>
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    HTML
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <ul>
-                        <li>HTML stands for Hyper Text Markup Language</li>
-                        <li>HTML is the standard markup language for creating Web pages</li>
-                        <li>HTML describes the structure of a Web page</li>
-                        <li>HTML consists of a series of elements</li>
-                        <li>HTML elements tell the browser how to display the content</li>
-                        <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph",
-                            "this is a link", etc.
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-white">First Link</a>
                         </li>
-                    </ul>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                    </nav>
                 </div>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    CSS
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <ul>
-                        <li>CSS stands for Cascading Style Sheets</li>
-                        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media
-                        </li>
-                        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once
-                        </li>
-                        <li>External stylesheets are stored in CSS files
-                        </li>
-                    </ul>
-                </div>
+        <div class="bg-gray-800 bg-opacity-75">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-400 text-sm text-center sm:text-left">© 2020 Tailblocks —
+                    <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-500 ml-1"
+                        target="_blank">@knyttneve</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-400">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Javascript
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <ul>
-                        <li>JavaScript Can Change HTML Content</li>
-                        <li>JavaScript Can Change HTML Attribute Values</li>
-                        <li>JavaScript Can Change HTML Styles (CSS)</li>
-                        <li>JavaScript Can Hide HTML Elements</li>
-                        <li>JavaScript Can Show HTML Elements</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    </footer>
 </body>
 
 </html>
