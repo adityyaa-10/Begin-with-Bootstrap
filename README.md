@@ -21,14 +21,14 @@ Exploring Bootstrap and Tailwind CSS
 ### SSH  [Github Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
 ```bash
-$ git clone git@github.com:adityyaa-10/Dummy-Gym-Website.git
+$ git clone git@github.com:adityyaa-10/CSS-Frameworks.git
 ```
 
 
 ### GitHub CLI
 
 ```bash
-$ gh repo clone adityyaa-10/Dummy-Gym-Website
+$ gh repo clone adityyaa-10/CSS-Frameworks
 ```
 
 ### HTTPS
