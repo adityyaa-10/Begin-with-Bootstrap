@@ -34,7 +34,7 @@ $ gh repo clone adityyaa-10/CSS-Frameworks
 ### HTTPS
 
 ```bash
-$ git clone https://github.com/adityyaa-10/Dummy-Gym-Website.git
+$ git clone https://github.com/adityyaa-10/CSS-Frameworks.git
 ```
 
 **4.** Create a new working branch 
@@ -47,7 +47,7 @@ $ git checkout -b [your_branch_name]
 **5.** Navigate to the new project directory:
 
 ```bash
-cd Dummy-Gym-Website
+cd CSS-Frameworks
 ```
 
 **6.** Open the project in VS Code
