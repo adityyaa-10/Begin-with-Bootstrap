@@ -1,6 +1,6 @@
 ## CSS-Frameworks 
 
-Exploring Bootstrap and Tailwind CSS
+Exploring Bootstrap, Tailwind CSS and Bulma frameworks 
 
 
 
